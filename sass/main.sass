@@ -1,0 +1,117 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap')
+
+
+
+body, html
+	width: 100%
+	height: 100%
+	font-family: 'Poppins', sans-serif
+	color: #222
+
+button
+	cursor: pointer
+
+.navbar-brand img
+	width: 9rem
+	margin-left: -1rem
+
+.navbar-nav li
+	padding-right: 20px
+
+.nav-link 
+	font-size: 1.1em !important
+
+.carousel-inner
+	height: 500px
+
+.carousel-inner img 
+	transform: translateY(-30%)
+	height: 100%
+
+.carousel-caption
+	position: absolute
+	top: 50%
+	transform: translateY(-80%)
+	text-shadow: 1px 1px 10px #000
+
+.padding
+	padding-bottom: 2em
+
+.alert
+	width: 75% !important
+	margin: 0 auto !important
+	padding-top: 2em !important
+
+.alert hr
+	border-top: 2px solid silver #f0f0f0
+	width: 95%
+	margin-top: 0.3em
+	margin-bottom: 1em
+
+.fa-code
+	color: #e54d26
+.fa-bold
+	color: #563d7c
+.fa-sass
+	color: #2163af
+
+.fa-code, .fa-bold, .fa-sass
+	font-size: 4em
+	margin: 1em
+
+#fixed
+	height: 400px
+	border-top: 4px solid #f0f0f0
+	border-bottom: 4px solid #f0f0f0
+	background: url("../img/bg.jpg") no-repeat center fixed
+	background-blend-mode: multiply
+	background-color: lightblue
+	background-size: cover
+
+#gifBtn
+	margin-bottom: 20px
+
+#gifs img
+	max-width: 20rem
+  
+	min-width: 10rem
+	margin-bottom: 20px
+
+.botton
+	margin-bottom: 30px
+
+.social a 
+	font-size: 4em
+	margin: 2em
+	margin-top: 20px
+
+.fa-youtube
+	color: #bb0000
+
+.fa-instagram
+	color: #517fa4
+
+.fa-twitter
+	color: #00aced
+
+.fa-facebook
+	color: #3b5998
+
+
+
+@media (min-width: 1100px)
+	.carousel-inner img
+		width: 100%
+
+@media (max-width: 450px)
+	.carousel-caption .display-2 
+		font-size: 3em
+
+@media (max-width: 750px)
+	#media
+		font-size: 1.5em
+
+@import "media" // Always at the end
